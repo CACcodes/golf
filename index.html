@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>golf</h1>
+
+<p>tap the button below .</p>
+
+<button onclick="showContent()">Show golf content</button>
+
+<template>
+    <iframe src="https://www.freeshot.live/embed/SuperSportGolf.php" width="100%" height="100%" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay;" allowtransparency="true" id="thatframe"> </iframe>
+</template>
+
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
